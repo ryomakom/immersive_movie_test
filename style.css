@@ -1,0 +1,33 @@
+/* style.css */
+body, html {
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    width: 100%; /* 幅を100%に設定して、ビューポートを完全に埋める */
+}
+
+.video-container {
+    position: fixed; /* 画面中央に動画を固定 */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100vw; /* ビューポート幅に合わせる */
+}
+
+.video-container video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* アスペクト比を保ちながら、コンテナのサイズに合わせて動画を拡大/縮小 */
+}
+
+
+.overlay-text {
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 2em;
+    font-weight: bold;
+    transition: top 0.5s ease; /* スムーズな移動効果を追加 */
+}
